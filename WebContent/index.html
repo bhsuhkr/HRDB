@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome To RISA</title>
+
+<link rel="stylesheet" type="text/css" href="css/login.css">
+
+
+</head>
+<body background="images/background.png">
+<div class="container-main">
+<form name="loginform" onsubmit="return validate()" method="post" action="mainpage.html">
+  <div class="imgcontainer">
+    <img src="images/RISA.png" alt="pic" class="pic">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" id="text1" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="text2" required>
+    
+    <script type="text/javascript">
+		function validate()
+		{
+		    if(   document.getElementById("text1").value == "a"
+		       && document.getElementById("text2").value == "a" )
+		    {
+		        return true;
+		    }
+		    else
+		    {
+		        alert( "Please check your username and password are correct." );
+		        return false;
+		    }
+		}
+	</script>
+        
+    <button type="submit" >Login</button>
+    
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container">
+  	<center><span>Don't have an ID? <a href="#">Create yours now.</a></span><br/>
+  	<span>Forgot <a href="#">ID or password?</a></span></center>
+  </div>
+  </form>
+  </div>
+
+
+</body>
+</html>
