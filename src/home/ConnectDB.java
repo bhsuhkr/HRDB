@@ -4,7 +4,7 @@ import java.sql.*;
 public class ConnectDB {
 	
 	private static final String USERNAME="root";
-    private static final String PASSWORD="qhgus9857";
+    private static final String PASSWORD="";
     private static final String URL="jdbc:mysql://localhost:3306/sakila";
     private static Connection conn=null;
     
